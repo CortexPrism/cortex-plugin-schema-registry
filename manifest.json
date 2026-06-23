@@ -1,7 +1,7 @@
 {
   "name": "cortex-plugin-schema-registry",
-  "version": "1.0.0",
-  "description": "Schema Registry Manager — Confluent/AWS Glue schema evolution with backward/forward compatibility validation",
+  "version": "1.0.1",
+  "description": "Schema Registry Manager \u2014 Confluent/AWS Glue schema evolution with backward/forward compatibility validation",
   "kind": "esm",
   "entryPoint": "mod.ts",
   "runtime": "deno",
@@ -9,14 +9,40 @@
   "license": "MIT",
   "repository": "https://github.com/CortexPrism/cortex-plugin-schema-registry",
   "homepage": "https://cortexprism.io/marketplace/plugins/schema-registry",
-  "capabilities": ["tools", "network:fetch"],
+  "capabilities": [
+    "tools",
+    "network:fetch"
+  ],
   "tools": [
-    { "name": "schema_register", "description": "Register new schema version", "params": [] },
-    { "name": "schema_validate", "description": "Validate schema compatibility", "params": [] },
-    { "name": "schema_evolve", "description": "Plan schema evolution", "params": [] },
-    { "name": "schema_list_versions", "description": "List schema versions", "params": [] }
+    {
+      "name": "schema_register",
+      "description": "Register new schema version",
+      "params": []
+    },
+    {
+      "name": "schema_validate",
+      "description": "Validate schema compatibility",
+      "params": []
+    },
+    {
+      "name": "schema_evolve",
+      "description": "Plan schema evolution",
+      "params": []
+    },
+    {
+      "name": "schema_list_versions",
+      "description": "List schema versions",
+      "params": []
+    }
   ],
   "dependencies": {},
-  "peerDependencies": { "cortex": ">=1.0.0" },
-  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+  "peerDependencies": {
+    "cortex": ">=0.51.0"
+  },
+  "aiDisclosure": {
+    "tools": [
+      "Kilo (DeepSeek) \u2014 batch scaffold"
+    ],
+    "humanReview": true
+  }
 }
